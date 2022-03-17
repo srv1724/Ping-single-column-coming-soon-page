@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --grey: hsl(0, 0%, 59%);
+    --very-dark-blue:hsl(209, 33%, 12%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 20px;
+    color: var(--grey);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    overflow: auto;
+    resize: both;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 30px 0px 15px;
+    font-size: 1.6em;
+}
+
+.notbold{
+    font-weight: normal;
+}
+.bold{
+    color: black;
+}
+.description{
+    margin: 0px 0px 35px;
+    color: rgb(24, 21, 21);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.8em;
+}
+::placeholder{
+    color: var(--grey);
+}
+.heighttext{
+    height: 45px;
+    width: 350px;
+    border-radius: 40px;
+    padding: 17px;
+    border: 2px solid var(--pale-blue);
+    /* border-color: var(--pale-blue); */
+
+}
+
+.input-err{
+    border: 2px solid var(--light-red);
+}
+.input-err2{
+    border: 2px solid var(--grey);
+}
+
+.error{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.6em;
+    margin: 0px 0px 0px 8px;
+    color: var(--light-red);
+    font-style: italic;
+    margin:0px 0px 0px 20px;
+}
+.relative{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    resize: both;
+}
+/* .heighttext:focus {
+    border: 2px solid blue;
+} */
+.button {
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 5px 0px 10px var(--blue);
+    margin: 0px 10px 0px;
+    height: 45px;
+}
+.button:hover{
+    opacity: 0.8;
+}
+.images{
+    width: 550px;
+    height: auto;
+    margin: 55px 0px 50px;
+}
+.icon-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.icons{
+    color: var(--blue);
+    background-color: white;
+    height: 35px;
+    width:35px;
+    border: 0.5px solid var(--pale-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icons:hover{
+    color: white;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.copyright_claim{
+    margin: 20px 0px 10px;
+    font-size:0.65em;
+    font-family: 'Libre Franklin', sans-serif;
+}
+footer {
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.6em;
+}
+@media screen and (max-width:540px){
+  h1{
+    font-size: 1.2em;
+  }
+  .description{
+    font-size: 0.6em;
+  }
+
+  .relative{
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+/*     position:relative; */
+/*     height: 45px;
+    width: 330px; */
+  }
+    .heighttext{
+    height: 40px;
+    width: 330px;
+  }
+  .error-prompt{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:0.5em
+  }
+  .error{
+      margin:0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .button{
+    margin:15px;
+    height:40px;
+    width: 330px;
+    font-size: 14px;
+  }
+/*   .absolute{
+    position:absolute;
+    top:55px
+  } */
+  .images{
+    width: 330px;
+    height: auto;
+    margin: 80px 0px 70px;
+  }
+  .icons{
+    height: 45px;
+    width:45px;
+  }
+  .copyright_claim{
+    margin: 30px 0px 10px;
+  }
+}
